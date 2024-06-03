@@ -9,4 +9,20 @@
     #hamburger-nav{
         display: flex;
     }
+
+    .logo {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1rem;
+        font-family: "Rock Salt", cursive;
+        letter-spacing: 0.8rem;
+    }
+    
+    .logo sub{
+        font-family: "Poppins", sans-serif;
+        letter-spacing: 0.3rem;
+        font-size: 0.6rem;
+        margin-left: -8px;
+    }
+    
 }
