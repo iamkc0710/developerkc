@@ -177,8 +177,8 @@ section{
 
 .profile-img{
     display: flex;
-    width:350px;
-    height: 350px;
+    width:21rem;
+    height: 21rem;
     position: relative;
     top: 0;
     left: 0;
@@ -187,10 +187,10 @@ section{
 .skill{
     position: absolute;
     bottom: -78px;
-    left: -75px;
+    left: -81px;
     display: flex;
-    width:500px;
-    height: 500px;
+    width:31.25rem;
+    height: 31.25rem;
    animation: rotateLogo 10s linear infinite; 
 }
 
@@ -284,6 +284,4 @@ section{
     border: #ffc233 0.1rem solid;     
     color: #000;
 }
-
-
 
