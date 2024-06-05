@@ -87,13 +87,13 @@ nav{
 
 #hamburger-nav{
     display: none;
+   
 }
 
 .hamburger-menu{
     position: relative;
     display: inline-block;
     z-index: 2;
-
 }
 
 .hamburger-icon{

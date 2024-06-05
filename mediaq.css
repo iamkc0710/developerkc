@@ -7,7 +7,7 @@
     }
     
     #hamburger-nav{
-        display: flex;
+        display: none;
     }
 
     .skill{
