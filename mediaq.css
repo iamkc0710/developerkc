@@ -10,6 +10,49 @@
         display: flex;
     }
 
+    .skill{
+      position: absolute;
+      bottom: -70px;
+      left: -60px;
+      display: flex;
+      width:25rem;
+      height: 25rem;
+  }
+
+    #experience, .experience-details-container{
+      margin-top: 2rem;
+    }
+
+    .text2{
+      margin-top: 6rem;
+    }
+
+    #profile, .section-container{
+      display: block;
+    }
+
+    .arrow{
+      display: none;
+    }
+
+    section, .section-container{
+      height: fit-content;
+    }
+
+    section{
+      margin: 0 5%;
+    }
+
+    .section__pic-container{
+      width: 275px;
+      height: 275px;
+      margin: 0 auto 2rem;
+    }
+
+    .about-containers{
+      margin-top: 0;
+    }
+
     .logo {
         text-transform: uppercase;
         font-weight: 600;
@@ -50,19 +93,33 @@
     #profile {
       height: 83vh;
       margin-bottom: 0;
+      margin-top: 2rem;
     }
+
+    .skill{
+      position: absolute;
+      bottom: -65px;
+      left: 35px;
+      display: flex;
+      width:25rem;
+      height: 25rem;
+  }
+
     article {
       font-size: 1rem;
     }
+
     footer nav {
       height: fit-content;
       margin-bottom: 2rem;
     }
+
     .about-containers,
     .contact-info-upper-container,
     .btn-container {
       flex-wrap: wrap;
     }
+
     .contact-info-container {
       margin: 0;
     }
