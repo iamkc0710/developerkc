@@ -86,10 +86,22 @@
 
 
   @media screen and (max-width: 600px) {
-    #contact,
-    footer {
+    #contact{
       height: 40vh;
     }
+
+    footer{
+      height: 10vh;
+    }
+
+    #hamburger-nav{
+      height: 10vh;
+    }
+
+    .text2{
+      margin-top: 3rem;
+    }
+
     #profile {
       height: 83vh;
       margin-bottom: 0;
@@ -98,20 +110,26 @@
 
     .skill{
       position: absolute;
-      bottom: -65px;
-      left: 35px;
+      bottom: -40px;
+      left: 17px;
       display: flex;
-      width:25rem;
-      height: 25rem;
+      width: 16rem;
+      height: 16rem;
   }
+
+  .logo img{
+    margin-top: 15px;
+    z-index: 1;
+  }
+  
 
     article {
       font-size: 1rem;
     }
 
     footer nav {
+      display: none;
       height: fit-content;
-      margin-bottom: 2rem;
     }
 
     .about-containers,
@@ -153,3 +171,4 @@
       text-align: justify;
     }
   }
+
