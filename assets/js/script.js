@@ -116,23 +116,58 @@ for (let i = 0; i < filterBtn.length; i++) {
 
 
 //contact form variables
-// Select the form and inputs
-// Select the form and inputs
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
 const formBtn = document.querySelector("[data-form-btn]");
 
-// Add event listener to all form input fields
-for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i].addEventListener("input", function () {
-    // Check form validation
+// Add event listener for form input
+formInputs.forEach(input => {
+  input.addEventListener("input", () => {
+    // Check form validity
     if (form.checkValidity()) {
       formBtn.removeAttribute("disabled");
     } else {
       formBtn.setAttribute("disabled", "");
     }
   });
-}
+});
+
+// Add event listener for form submission
+form.addEventListener("submit", function (e) {
+  e.preventDefault(); // Prevent default form submission
+
+  // Collect form data
+  const formData = new FormData(form);
+  const data = {
+    from: formData.get("email"),
+    to: "thekaranchaurasiya@gmail.com",
+    subject: "Contact Form Submission",
+    body: `
+      Full Name: ${formData.get("fullname")}
+      Email: ${formData.get("email")}
+      Message: ${formData.get("message")}
+    `
+  };
+
+  // Send email using SMTP.js
+  Email.send({
+    SecureToken: "83c30612-b05b-4f96-9d2f-badb01e3a2df", // Replace with your SMTP.js secure token
+    To: data.to,
+    From: data.from,
+    Subject: data.subject,
+    Body: data.body
+  })
+  .then(() => {
+    alert("Message sent successfully!");
+    form.reset(); // Reset the form
+    formBtn.setAttribute("disabled", ""); // Disable the button again
+  })
+  .catch(error => {
+    console.error("Error sending email:", error);
+    alert("There was an error sending the message. Please try again.");
+  });
+});
+
 
 
 
