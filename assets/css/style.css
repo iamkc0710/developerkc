@@ -905,7 +905,7 @@ a{
   font-weight: var(--fw-300);
 } */
 
-.filter-select-box, .select-value{
+.filter-select-box, .select-value, .select-icon{
   display: none;
 }
 
