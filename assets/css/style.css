@@ -1,14 +1,3 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
 
 
 /*-----------------------------------*\
@@ -711,15 +700,22 @@ a{
  * skills 
  */
 
-.skill-box{
+/* .skill-box{
   display: flex;
   gap: 3rem;
+} */
+
+.skill-box{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
+
 
 .skills-title { margin-bottom: 20px;  
 }
 
-.skills-list { padding: 20px; width: 50%; }
+.skills-list { padding: 20px; }
 
 
 .skills-item:not(:last-child) { margin-bottom: 15px; }
@@ -1034,7 +1030,15 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .clients-item { min-width: calc(33.33% - 10px); }
+  
+  .skill-box{
+    flex-direction: row;
+  }
 
+  .skills-list{
+    width: 50%;
+  }
+  
 
 
   /**
@@ -1059,6 +1063,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * CUSTOM PROPERTY
    */
+
+   
 
   :root {
 
