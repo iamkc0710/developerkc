@@ -115,24 +115,26 @@ for (let i = 0; i < filterBtn.length; i++) {
 
 
 
-// contact form variables
+//contact form variables
+// Select the form and inputs
+// Select the form and inputs
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
 const formBtn = document.querySelector("[data-form-btn]");
 
-// add event to all form input field
+// Add event listener to all form input fields
 for (let i = 0; i < formInputs.length; i++) {
   formInputs[i].addEventListener("input", function () {
-
-    // check form validation
+    // Check form validation
     if (form.checkValidity()) {
       formBtn.removeAttribute("disabled");
     } else {
       formBtn.setAttribute("disabled", "");
     }
-
   });
 }
+
+
 
 
 
